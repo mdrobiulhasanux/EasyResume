@@ -1,0 +1,45 @@
+{
+  "name": "resume-builder-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "android": "cap run android",
+    "ios": "cap run ios",
+    "build:mobile": "npm run build && cap sync",
+    "capacitor:add": "cap add",
+    "capacitor:copy": "cap copy",
+    "capacitor:sync": "cap sync",
+    "capacitor:open": "cap open"
+  },
+  "dependencies": {
+    "@capacitor/android": "^5.5.1",
+    "@capacitor/app": "^5.0.6",
+    "@capacitor/core": "^5.5.1",
+    "@capacitor/haptics": "^5.0.6",
+    "@capacitor/keyboard": "^5.0.6",
+    "@capacitor/status-bar": "^5.0.6",
+    "@capacitor/splash-screen": "^5.0.6",
+    "@capacitor/share": "^5.0.6",
+    "@capacitor/filesystem": "^5.1.4",
+    "@capacitor/device": "^5.0.6",
+    "@capacitor/network": "^5.0.6",
+    "@supabase/supabase-js": "^2.38.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.263.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^5.5.1",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^4.0.0-alpha.25",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}
